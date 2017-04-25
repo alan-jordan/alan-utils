@@ -1,6 +1,6 @@
 var assert = require('./assert')
-var functions = require('../lib/index')
 var data = require('../data/data')
+var functions = require('../index')
 
 var meaningOfLife = "42"
 assert(2 + 2, 4, 'test are working!')
