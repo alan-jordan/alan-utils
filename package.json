@@ -1,0 +1,27 @@
+{
+  "name": "alan-utils",
+  "version": "1.0.0",
+  "description": "A utility library",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alan-jordan/alan-utils.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alan-jordan/alan-utils/issues"
+  },
+  "homepage": "https://github.com/alan-jordan/alan-utils#readme",
+  "devDependencies": {
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  }
+}

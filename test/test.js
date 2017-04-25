@@ -1,7 +1,45 @@
-var assert = require('./lib/assert')
-var functions = require('./lib/index')
+var assert = require('./assert')
+var functions = require('../lib/index')
+var data = require('../data/data')
 
+var meaningOfLife = "42"
 assert(2 + 2, 4, 'test are working!')
+/*
+ * isNumber
+ */
+
+// Uncomment when ready to test
+assertIsNumber()
+
+function isNumber (thing) {
+  if (typeof thing == 'number') {
+    return true
+  }
+  return false
+}
+
+function assertIsNumber () {
+  assert(isNumber('42'), false, '"42" is not a number datatype')
+  assert(isNumber(13), true, '13 is a number datatype')
+}
+/*
+ * isEmail
+ */
+
+// Uncomment when ready to test
+assertIsEmail()
+
+function isEmail (str) {
+  var re = /^[\w.]+@(\w)+.(\w)+$/
+  return re.test(str)
+}
+
+function assertIsEmail () {
+  assert(isEmail('user@company.com'), true, 'isEmail detects an email')
+  assert(isEmail('3333@'), false, 'isEmail does not give a false positive')
+  assert(isEmail('johnny.b.good'), false, 'isEmail does not give a false positive')
+}
+
 
 /*
  * countIf
